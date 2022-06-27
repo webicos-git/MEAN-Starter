@@ -1,0 +1,22 @@
+.delete {
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.update {
+  color: grey;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+}
+
+.card-body {
+  height: 300px;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}

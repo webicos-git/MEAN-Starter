@@ -1,0 +1,21 @@
+
+<div class="container my-5">
+  <form #form="ngForm" (ngSubmit)="createNewPost(form)">
+    <input
+      type="text"
+      class="form-control mb-2"
+      placeholder="Title"
+      ngModel
+      name="title"
+      #titleField="ngModel">
+    <input
+      type="text"
+      class="form-control mb-2"
+      placeholder="Description"
+      ngModel
+      name="description"
+      #descriptionField="ngModel">
+    <button mat-raised-button color="primary">Submit</button>
+  </form>
+
+</div>

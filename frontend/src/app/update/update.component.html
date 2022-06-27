@@ -1,0 +1,21 @@
+
+<div class="container my-5">
+  <form #form="ngForm" (ngSubmit)="updatePost(form)">
+    <input
+      type="text"
+      class="form-control mb-2"
+      placeholder="Title"
+      [ngModel]="title"
+      name="title"
+      #titleField="ngModel">
+    <textarea
+      type="text"
+      class="form-control mb-2"
+      placeholder="Description"
+      [ngModel]="description"
+      name="description"
+      #descriptionField="ngModel"></textarea>
+    <button mat-raised-button color="primary">Update</button>
+  </form>
+
+</div>

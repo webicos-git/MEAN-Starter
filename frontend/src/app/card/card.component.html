@@ -1,0 +1,18 @@
+<!--<div *ngFor="let post of posts">-->
+<!--  <h2>{{post.title}}</h2>-->
+<!--  <p>{{post.description}}</p>-->
+<!--  <button class="btn btn-danger" (click)="updatePost(post._id)">Update</button>-->
+<!--  <button class="btn btn-danger" (click)="deletePost(post._id)">Delete</button>-->
+<!--  <hr>-->
+<!--</div>-->
+
+<div class="d-flex gap-3 align-items-center justify-content-center mt-3 flex-wrap">
+<div *ngFor="let post of posts" class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h2 class="card-title">{{post.title}}</h2>
+    <h4 class="card-text">{{post.description}}.</h4>
+    <i class="material-icons update" (click)="updatePost(post._id)">edit</i>
+    <i class="material-icons delete" (click)="deletePost(post._id)">delete</i>
+  </div>
+</div>
+</div>
